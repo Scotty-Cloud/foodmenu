@@ -17,7 +17,7 @@ const menuListbox = document.getElementById("menu-items");
 // Define the event handler for the category dropdown
 function updateListbox() {
   // Clear the listbox
-  menuListbox.innerHTML = "";
+  menuListbox.innerText = "";
   // Get the selected category
   const selectedCategory = categoryDropdown.value;
   // If a category is selected, populate the listbox
