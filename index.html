@@ -4,17 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Menu</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/5.2.1/css/bootstrap.min.css"
+    /> -->
     <link rel="stylesheet" href="styles.css" />
     <script defer src="app.js"></script>
   </head>
   <body>
     <main>
-      <select id="categoryDropdown">
-        <option value="drinks">Drinks</option>
-        <option value="entrees">Entrees</option>
-        <option value="desserts">Desserts</option>
-      </select>
-      <select id="menuListbox" size="5"></select>
+      <section>
+        <h1>Menu</h1>
+        <label for="category">Select a category:</label>
+        <select id="category" onchange="updateListbox()">
+          <option value="">Select a category</option>
+          <option value="drinks">Drinks</option>
+          <option value="entrees">Entrees</option>
+          <option value="desserts">Desserts</option>
+        </select>
+        <label for="menu-items">Menu items:</label>
+        <select id="menu-items" size="5"></select>
+      </section>
     </main>
   </body>
 </html>
